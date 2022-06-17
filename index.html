@@ -9,11 +9,32 @@
     <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
   </head>
   <body>
-    <div id="app">
-      <h1>Product goes here</h1>
+    <!-- Introduction To VUE start -->
+    <!-- <div id="app">
+      <h1>{{ product }}</h1>
+      <h3>We love to wear {{ product }} because it {{ description }}</h3>
+    </div> -->
+    <!-- Introduction To VUE end -->
+
+    <!-- Attribute Binding start -->
+    <div class="nav-bar"></div>
+
+    <div class="product-display">
+      <div class="product-container">
+        <div class="product-image">
+          <!-- image goes here -->
+        </div>
+        <div class="product-info">
+          <h1>{{ product }}</h1>
+        </div>
+      </div>
     </div>
+    <!-- Attribute Binding end -->
 
     <!-- Import Js -->
     <script src="./main.js"></script>
+    <script>
+      const mountedApp = app.mount("#app");
+    </script>
   </body>
 </html>
